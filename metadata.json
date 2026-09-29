@@ -1,0 +1,6 @@
+{
+  "name": "Demash Pools",
+  "description": "Demash Dzimbabwe Pools - World-class luxury swimming pools and landscaping across Zimbabwe. Instant micro-BOQ estimator, 24/7 AI workforce, live chat hijack, trade call directory, and affluent suburb sales engine.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

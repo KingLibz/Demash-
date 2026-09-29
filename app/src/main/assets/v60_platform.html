@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>DEMASH GLOBAL · V60 SINGULARITY & WORLD MARKETS PLATFORM</title>
+    <meta name="description" content="Demash Dzimbabwe Pools. Unified V60 Singularity & World Markets Platform. Titan Leaves™ Foliage Defense, 37% Margin Security, Multi-Currency Real-Time Turnkey Estimates.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --p-cyan: #00f2ff;
+            --money: #00ff88;
+            --v-black: #030F17;
+            --gold: #FFD700;
+            --gold-dark: #C48D2A;
+            --gold-glow: rgba(255, 215, 0, 0.25);
+            --surface: #071D2A;
+            --surface-elevated: #0E2A3C;
+            --surface-highlight: #163B54;
+            --border: #18374D;
+            --border-gold: rgba(255, 215, 0, 0.4);
+            --text-secondary: #CBD5E1;
+            --text-muted: #94A3B8;
+        }
+        * { box-sizing: border-box; -webkit-font-smoothing: antialiased; outline: none !important; }
+        body { background: #030F17; color: white; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; overflow-x: hidden; scroll-behavior: smooth; }
+        .f0rtress-glass { background: rgba(7, 29, 42, 0.95); backdrop-filter: blur(40px); border: 1px solid rgba(255,255,255,0.08); }
+        .titan-flare { color: var(--p-cyan); text-shadow: 0 0 25px var(--p-cyan); animation: synapse 1.5s infinite alternate; }
+        @keyframes synapse { from { opacity: 1; filter: brightness(1.3); } to { opacity: 0.35; filter: contrast(1.2); } }
+        .btn-wealth { background: linear-gradient(135deg, var(--money), var(--p-cyan)); color: black; font-weight: 900; transition: 0.3s; border-radius: 50px; cursor: pointer; }
+        .btn-wealth:hover { box-shadow: 0 0 50px rgba(0, 255, 136, 0.6); transform: translateY(-2px); }
+        .boq-scroll::-webkit-scrollbar { width: 4px; }
+        .boq-scroll::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 10px; }
+        .typing::after { content: '█'; animation: blink 0.5s infinite; color: var(--p-cyan); }
+        @keyframes blink { 50% { opacity: 0; } }
+        .upload-zone { border: 2px dashed #23455E; transition: 0.3s; }
+        .upload-zone:hover { border-color: var(--p-cyan); background: rgba(0, 242, 255, 0.04); }
+        input, select { background: #081B26 !important; border: 1px solid #1D3D52 !important; color: white !important; font-size: 14px; border-radius: 12px !important; padding: 12px 14px !important; }
+        .dept-card { border-left: 2px solid #18374D; padding-left: 12px; margin-bottom: 12px; transition: 0.3s; }
+        .dept-card:hover { border-left-color: var(--p-cyan); background: rgba(255,255,255,0.02); }
+        .laser-sweep { position: absolute; left: 0; right: 0; height: 2px; background: var(--p-cyan); box-shadow: 0 0 15px var(--p-cyan); animation: scan 1.4s infinite ease-in-out; }
+        @keyframes scan { 0% { top: 10%; opacity: 0.2; } 50% { top: 90%; opacity: 1; } 100% { top: 10%; opacity: 0.2; } }
+        .tab-mode-btn { transition: all 0.25s; }
+        .tab-mode-btn.active { background: linear-gradient(135deg, #163B54, #0E2A3C); border-color: var(--gold); color: var(--gold); box-shadow: 0 4px 20px var(--gold-glow); }
+    </style>
+</head>
+<body class="no-select">
+
+    <!-- ETERNAL WAKE (MOBILE PERSISTENCE) -->
+    <video id="v-wake" class="fixed opacity-0 pointer-events-none" loop muted playsinline>
+        <source src="data:video/mp4;base64,AAAAIGZ0eXBpc29tAAACAGlzb21tcDQyAAAACHV1aWRfcm9vAAAACHRyYWsAAAAIdGtoZAAAAAgAAAAAAQAAAAEAAAAAAAgAAAAAAABtZGlhAAAACG1kaGQAAAAIAAAAAAEAAAABAAAIAAAAAAAAaGRscgAAAABybmxyAAAAAAAAbWluZgAAAAAIdm1oZAAAAAgAAAAAAHByb2YAAAAAAABkaW5mAAAACHRocmUAAAAIAAAAAABzdGJsAAAACGhkcmUAAAAIAAAAAAA=" type="video/mp4">
+    </video>
+
+    <!-- OMNI-HUD -->
+    <div id="hud" class="w-full bg-[#041018] p-2 px-4 md:px-6 flex justify-between items-center border-b border-zinc-800 text-[9px] font-black uppercase sticky top-0 z-[100]">
+        <div class="flex items-center gap-3">
+            <span class="titan-flare tracking-[0.25em]">● V60 SINGULARITY UNIFIED</span>
+            <span id="ver" class="text-zinc-500 hidden sm:inline">1T RESEARCH | NORTON HUB | TITAN LEAVES™ | SYNC: &lt; 0.1s</span>
+        </div>
+        <div class="flex gap-3 items-center">
+            <a href="/download-apk" download="DemashPools_v60_update.apk" target="_blank" class="text-cyan-400 hover:text-white flex items-center gap-1.5 border border-cyan-500/40 px-3 py-1 rounded-full"><i class="fa fa-download"></i> APK (29.1MB)</a>
+            <span id="sentinel" class="text-money">SENTINEL: PURGED</span>
+            <div id="adminTrigger" class="hidden">
+                 <button onclick="toggleHQ()" class="bg-gold text-black px-3.5 py-1 rounded font-black italic shadow-lg hover:scale-105 transition">EMPIRE HQ</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN PLATFORM WRAPPER -->
+    <div id="mainPlatform" class="transition-all duration-700">
+
+        <!-- UNIFIED TOP HEADER -->
+        <header class="p-6 md:p-8 flex flex-col md:flex-row justify-between items-center f0rtress-glass border-b border-white/5 gap-4">
+            <div class="flex items-center gap-4">
+                <div class="bg-gradient-to-br from-amber-400 to-amber-600 text-black font-black text-xl w-12 h-12 rounded-2xl flex items-center justify-center shadow-lg">DZ</div>
+                <div>
+                    <h1 id="brandTitle" class="text-2xl md:text-3xl font-black text-white italic leading-tight">DEMASH <span class="text-cyan-400 uppercase text-xs not-italic font-bold">Universal</span></h1>
+                    <span id="sociologyTag" class="text-[10px] text-zinc-400 tracking-[0.3em] uppercase font-bold">Zimbabwe Hub · World Standard</span>
+                </div>
+            </div>
+
+            <!-- AUTO-DETECTED GEOGRAPHICAL REGION SELECTOR -->
+            <div class="flex items-center gap-2 bg-[#071D2A] px-3.5 py-1.5 rounded-full border border-amber-500/40">
+                <span class="text-[10px] font-black uppercase text-amber-400 flex items-center gap-1">
+                    <i class="fa fa-location-dot"></i> Region:
+                </span>
+                <select id="userRegionSelect" onchange="setUserRegion(this.value)" class="bg-transparent text-xs font-bold text-white border-none outline-none cursor-pointer">
+                    <option value="zim" selected>🇿🇼 Zimbabwe (Norton & Harare)</option>
+                    <option value="uk">🇬🇧 United Kingdom (UK Diaspora)</option>
+                    <option value="sa">🇿🇦 South Africa (SADC Diaspora)</option>
+                    <option value="dubai">🇦🇪 Dubai & UAE (Luxury Node)</option>
+                    <option value="usa">🇺🇸 USA & Americas</option>
+                    <option value="asia">🌏 Asia-Pacific (Industrial)</option>
+                </select>
+            </div>
+
+            <!-- UNIFIED MODE SWITCHER -->
+            <div class="flex flex-wrap gap-2 items-center bg-[#071D2A] p-1.5 rounded-full border border-zinc-800">
+                <button id="btnModeV60" onclick="switchView('v60')" class="tab-mode-btn active px-4 py-2 rounded-full text-xs font-black uppercase flex items-center gap-1.5">
+                    <i class="fa fa-atom text-cyan-400"></i> Construction Studio
+                </button>
+                <button id="btnModeWorld" onclick="switchView('world')" class="tab-mode-btn px-4 py-2 rounded-full text-xs font-black uppercase text-zinc-400 border border-transparent hover:text-white flex items-center gap-1.5">
+                    <i class="fa fa-lock text-amber-400"></i> Partner Portal
+                </button>
+            </div>
+
+            <div class="flex gap-3 items-center">
+                <!-- Multi-Currency Selector -->
+                <select id="currency-select" class="currency-selector" onchange="changeCurrency(this.value)">
+                    <option value="USD">USD ($) · World Standard</option>
+                    <option value="GBP">GBP (£) · UK Diaspora</option>
+                    <option value="ZAR">ZAR (R) · SA Diaspora</option>
+                    <option value="EUR">EUR (€) · Europe</option>
+                    <option value="AUD">AUD ($) · Australia</option>
+                    <option value="CAD">CAD ($) · Canada</option>
+                    <option value="AED">AED · Dubai Node</option>
+                </select>
+
+                <!-- WhatsApp Direct Contact -->
+                <a href="https://wa.me/263784219178" target="_blank" class="bg-money text-black px-5 py-2.5 rounded-full text-xs font-black shadow-lg hover:scale-105 transition flex items-center gap-2">
+                    <i class="fab fa-whatsapp text-sm"></i> <span>Eng. Liberman</span>
+                </a>
+            </div>
+        </header>
+
+        <!-- GLOBAL TITAN LEAVES™ ANNOUNCEMENT RIBBON -->
+        <div class="bg-gradient-to-r from-emerald-950 via-emerald-900 to-emerald-950 border-b border-emerald-500/60 p-3 text-center text-xs font-bold text-emerald-200 flex justify-center items-center gap-2">
+            <span class="bg-emerald-500 text-black text-[9px] font-black px-2 py-0.5 rounded uppercase">Live Upgrade</span>
+            <span>🌿 <strong>TITAN LEAVES™ SYSTEM ACTIVE:</strong> Engineered to stop Jacaranda & Msasa seasonal leaf clogs. Zero pump cavitation across all builds.</span>
+        </div>
+
+        <!-- ================= SECTION A: V60 SINGULARITY ENGINE VIEW ================= -->
+        <div id="viewV60" class="block">
+            <!-- HERO -->
+            <section class="py-16 md:py-24 px-6 text-center max-w-7xl mx-auto">
+                <div class="inline-flex items-center gap-3 bg-emerald-950/60 border border-emerald-500/60 rounded-full px-6 py-2 mb-6">
+                    <span class="text-emerald-400 text-lg">🌿</span>
+                    <span class="text-[11px] font-extrabold text-emerald-300 tracking-wider uppercase">UPGRADED TO TITAN LEAVES™ TODAY · ZERO PUMP CAVITATION DEFENSE</span>
+                </div>
+
+                <h1 id="heroHeadline" class="text-6xl md:text-[14rem] font-black leading-[0.8] mb-8 tracking-tighter uppercase italic">Make <br><span class="text-money">Wealth.</span></h1>
+                <p id="heroSub" class="text-zinc-400 text-lg md:text-3xl mb-8 font-medium italic max-w-5xl mx-auto">Universal Construction Singularity. 1 Trillion Points of Technical Integrity. 37% Margin Security. No Simulations.</p>
+
+                <!-- ACCOUNTS PRUDENCE DISCLOSURE -->
+                <div class="max-w-2xl mx-auto bg-zinc-950/80 border border-zinc-800 p-4 rounded-2xl mb-12 text-left text-xs text-zinc-400">
+                    <div class="flex items-center gap-2 text-gold font-bold mb-1">
+                        <i class="fa fa-shield-halved"></i> DEMASH ACCOUNTS CLEARANCE PROTOCOL
+                    </div>
+                    <span>"Promotions of money must be desired from accounts department. We cannot pay people when we don't have anything." Voucher Code <strong>DZ-APP-150</strong> (US$150 non-cash contract credit) applies to signed builds upon 60% construction mobilization clearance.</span>
+                </div>
+                
+                <!-- DRAWING UPLOADER WITH AI SCANNER SIMULATION -->
+                <div id="dropZone" class="relative max-w-xl mx-auto upload-zone p-12 rounded-[3rem] cursor-pointer mb-12 overflow-hidden" onclick="document.getElementById('fileIn').click()">
+                    <div id="laserScan" class="laser-sweep hidden"></div>
+                    <i class="fa fa-file-invoice text-5xl text-zinc-700 mb-4"></i>
+                    <h3 id="uploadTitle" class="font-black text-xs text-zinc-300 uppercase tracking-widest">Upload Site Drawings / Plans</h3>
+                    <p id="uploadSub" class="text-[10px] text-zinc-500 mt-2">AI Architect will analyze elevations, soil depth and load-paths instantly.</p>
+                    <input type="file" id="fileIn" class="hidden" onchange="handleUpload(event)">
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <button onclick="scrollToEstimator()" class="btn-wealth px-14 py-6 rounded-full text-xl shadow-2xl uppercase italic tracking-widest">Generate Sovereign Audit</button>
+                    <a href="/download-apk" download="DemashPools_v60_update.apk" target="_blank" class="border border-cyan-500/60 text-cyan-400 hover:bg-cyan-500 hover:text-black transition px-8 py-5 rounded-full text-sm font-black uppercase tracking-wider flex items-center gap-2">
+                        <i class="fa fa-android"></i> Download Android APK (29.1MB)
+                    </a>
+                </div>
+            </section>
+
+            <!-- REAL-TIME 3D ARCHITECTURAL POOL VISUALIZER -->
+            <section class="max-w-7xl mx-auto px-6 mb-16">
+                <div class="f0rtress-glass p-8 rounded-[4rem] border border-zinc-800 shadow-2xl">
+                    <div class="flex flex-col md:flex-row justify-between items-center mb-6 gap-4">
+                        <div>
+                            <div class="text-[10px] font-black text-cyan-400 tracking-widest uppercase">Live Architectural Model</div>
+                            <h3 class="text-2xl font-black italic uppercase text-white">Titan-Leaves™ Monolithic Shell Visualizer</h3>
+                        </div>
+                        <div class="flex gap-2">
+                            <button onclick="setSimLighting('day')" class="bg-zinc-900 border border-zinc-700 hover:border-gold px-4 py-1.5 rounded-full text-[10px] font-bold">☀️ Daytime</button>
+                            <button onclick="setSimLighting('night')" class="bg-zinc-900 border border-zinc-700 hover:border-cyan-400 px-4 py-1.5 rounded-full text-[10px] font-bold">🌙 LED Mood Light</button>
+                        </div>
+                    </div>
+                    <div class="relative w-full h-[320px] bg-[#020b12] rounded-[2.5rem] overflow-hidden border border-zinc-900 flex items-center justify-center">
+                        <canvas id="poolCanvas" width="900" height="320" class="w-full h-full"></canvas>
+                        <div class="absolute bottom-4 left-6 text-[10px] font-mono text-zinc-400 bg-black/60 backdrop-blur-md px-4 py-1.5 rounded-full border border-white/10">
+                            <span id="canvasDims">Scale: 6.0m × 3.5m</span> · <span class="text-emerald-400 font-bold">🌿 Titan Leaves™ Active</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ERP ESTIMATOR -->
+            <section id="estimator" class="p-6 md:p-12 max-w-7xl mx-auto mb-28">
+                <div class="f0rtress-glass p-10 md:p-12 rounded-[4rem] border border-zinc-800 shadow-2xl">
+                    <div class="grid lg:grid-cols-2 gap-16">
+                        <div class="space-y-8">
+                            <div class="flex justify-between items-center">
+                                <h2 class="text-3xl md:text-4xl font-black italic text-cyan-400 uppercase">Structural Synthesis</h2>
+                                <span class="bg-money/20 text-money border border-money text-[10px] font-black px-3 py-1 rounded-full uppercase">37% Profit Locked</span>
+                            </div>
+                            <div class="space-y-6">
+                                <div>
+                                    <label class="text-[10px] font-black text-zinc-400 uppercase tracking-widest">Ground Context & Zimbabwean Geography</label>
+                                    <select id="geo" onchange="onGeoChanged()" class="w-full p-4 mt-2 outline-none">
+                                        <option value="1.35" data-dist="12" selected>Norton & Katanga · Active Black Cotton Clay (Expansive Vertisol)</option>
+                                        <option value="1.75" data-dist="48">Borrowdale & Brooke · Granite Bedrock & Rock Outcrops</option>
+                                        <option value="1.45" data-dist="52">Glen Lorne & Chisipite · Steep Hillside & Perched Water</option>
+                                        <option value="1.0" data-dist="32">Msasa & Eastlea · Stable Sandy Loam Sub-base</option>
+                                        <option value="1.20" data-dist="420">Bulawayo & Matabeleland · Kalahari Sand & Calcrete</option>
+                                    </select>
+                                    <!-- REALISTIC GEOLOGICAL PROFILE CARD -->
+                                    <div id="soilIntelDisplay" class="mt-3 p-3.5 rounded-xl bg-zinc-950/90 border border-cyan-500/30 text-[11px] leading-relaxed">
+                                        <b class="text-cyan-400">🚜 Norton Black Cotton Clay:</b> High soil heave in rainy season. <span class="text-zinc-300">Requires 150mm Crushed Granite Drainage Ballast + Dual Y12 High-Tensile Steel Cage + Sub-base French drain.</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label class="text-[10px] font-black text-zinc-400 uppercase tracking-widest">Site Distance from Norton Base (km)</label>
+                                    <input type="number" id="dist" value="12" oninput="runV60Omni()" class="w-full p-4 mt-2">
+                                </div>
+                                <div>
+                                    <label class="text-[10px] font-black text-zinc-400 uppercase tracking-widest">Project Scale (sqm)</label>
+                                    <input type="number" id="sqm" value="32" oninput="runV60Omni()" class="w-full p-4 mt-2">
+                                </div>
+                            </div>
+                            <button onclick="runV60Omni()" class="w-full btn-wealth py-7 text-2xl uppercase italic shadow-xl">Synthesize Capital</button>
+
+                            <div class="flex gap-3 pt-2">
+                                <button onclick="printBOQ()" class="flex-1 bg-zinc-900 border border-zinc-800 hover:border-gold p-3 rounded-xl text-xs font-bold text-zinc-300 flex items-center justify-center gap-2">
+                                    <i class="fa fa-print"></i> Print / PDF
+                                </button>
+                                <button onclick="copyBOQ()" class="flex-1 bg-zinc-900 border border-zinc-800 hover:border-cyan-400 p-3 rounded-xl text-xs font-bold text-zinc-300 flex items-center justify-center gap-2">
+                                    <i class="fa fa-copy"></i> Copy BOQ
+                                </button>
+                            </div>
+                        </div>
+                        <div id="boqDisplay" class="bg-black border border-zinc-950 p-8 md:p-10 rounded-[3rem] font-mono text-[11px] h-[580px] overflow-y-auto leading-relaxed boq-scroll">
+                            [V60]: Awaiting capital parameters to orchestrate multi-branch revenue with Titan Leaves™ foliage filtration... 
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ================= SECTION B: WORLD MARKETS & TURNKEY CATALOG VIEW ================= -->
+        <div id="viewWorld" class="hidden">
+            <section class="max-w-7xl mx-auto px-6 py-12">
+                <!-- WORLD HERO BANNER -->
+                <div class="bg-gradient-to-br from-[#0B2538] to-[#061824] border border-amber-500/40 rounded-3xl p-8 md:p-12 mb-12 shadow-2xl flex flex-col md:flex-row justify-between items-center gap-8">
+                    <div>
+                        <div class="flex gap-2 mb-3">
+                            <span class="bg-amber-400 text-black text-[10px] font-black px-3 py-1 rounded-full uppercase">Global Diaspora Gateway</span>
+                            <span class="bg-emerald-500/20 text-emerald-400 border border-emerald-500/50 text-[10px] font-bold px-3 py-1 rounded-full uppercase">4K Drone Updates</span>
+                        </div>
+                        <h2 class="text-3xl md:text-5xl font-black italic uppercase text-white mb-4">Turnkey Luxury Pools Built to World Standards.</h2>
+                        <p class="text-zinc-300 text-sm md:text-base max-w-2xl leading-relaxed">
+                            Serving property owners in Zimbabwe and the worldwide diaspora in the UK, USA, South Africa, Australia, and Canada. Zero hidden fees, guaranteed 32% cost savings, and 10-year structural gunite shell warranty.
+                        </p>
+                    </div>
+
+                    <!-- Live Conversion Ticker -->
+                    <div class="bg-black/60 border border-zinc-800 rounded-2xl p-6 min-w-[280px]">
+                        <div class="text-[11px] font-bold text-amber-400 uppercase tracking-widest mb-3">Turnkey Benchmark (5m × 3m)</div>
+                        <div class="text-3xl font-black text-white mb-2" id="world-quote-val">US$6,500</div>
+                        <div class="text-xs text-zinc-400" id="world-quote-sub">≈ £5,135 GBP · R 117,000 ZAR · A$9,880 AUD</div>
+                    </div>
+                </div>
+
+                <!-- TURNKEY PACKAGES GRID -->
+                <div class="text-center mb-10">
+                    <div class="text-xs font-black text-amber-400 tracking-widest uppercase mb-1">Guaranteed Fixed Pricing</div>
+                    <h2 class="text-3xl font-black italic uppercase text-white">Turnkey Construction Packages</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                    <!-- Plunge Pool -->
+                    <div class="f0rtress-glass p-6 rounded-3xl border border-zinc-800 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-black text-white mb-1">Plunge Pool</h3>
+                            <div class="text-2xl font-black text-amber-400 mb-2 package-price" data-usd="3500">US$3,500</div>
+                            <div class="text-xs text-cyan-400 font-bold mb-4">Up to 3.2m × 2.0m · 2–3 weeks build</div>
+                            <ul class="text-xs text-zinc-300 space-y-2 mb-6">
+                                <li>✓ Compact gunite shell for clusters</li>
+                                <li>✓ 0.75HP eco-pump & sand filter included</li>
+                                <li>✓ Titan Leaves™ vortex surface skimmer</li>
+                                <li>✓ LED underwater mood illumination</li>
+                                <li>✓ 6 months free chemical water care</li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/263784219178?text=Hi%20Demash%20Pools!%20I%20am%20interested%20in%20the%20Plunge%20Pool%20Package%20(US$3,500)." target="_blank" class="bg-zinc-900 border border-zinc-700 hover:border-gold text-white text-center py-3 rounded-xl text-xs font-black uppercase transition">Book Plunge Pool</a>
+                    </div>
+
+                    <!-- Titan Leaves Estate Edition (Flagship) -->
+                    <div class="bg-gradient-to-br from-[#12364E] to-[#0A2333] p-6 rounded-3xl border-2 border-amber-400 shadow-2xl relative flex flex-col justify-between">
+                        <div class="absolute -top-3 right-6 bg-amber-400 text-black text-[9px] font-black px-3 py-1 rounded-full uppercase">FLAGSHIP · UPGRADED TODAY</div>
+                        <div>
+                            <h3 class="text-xl font-black text-white mb-1">Titan Leaves™ Estate</h3>
+                            <div class="text-2xl font-black text-amber-400 mb-2 package-price" data-usd="8900">US$8,900</div>
+                            <div class="text-xs text-emerald-400 font-bold mb-4">7.5m × 4.0m · Heavy Foliage Defense</div>
+                            <ul class="text-xs text-zinc-200 space-y-2 mb-6">
+                                <li>✓ 🌟 Titan Leaves™ High-Capacity Leaf Canister</li>
+                                <li>✓ Anti-clog protection against Jacaranda & Msasa leaves</li>
+                                <li>✓ 32MPa monolithic shell with dual Y12 steel cage</li>
+                                <li>✓ 1.0HP high-torque pump + 3-bag silica filter</li>
+                                <li>✓ Bullnose charcoal coping & dual underwater LEDs</li>
+                                <li>✓ 60% deposit milestone protection with 10-year warranty</li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/263784219178?text=Hi%20Demash%20Pools!%20I%20am%20interested%20in%20the%20flagship%20Titan%20Leaves%20Estate%20Package%20(US$8,900)." target="_blank" class="btn-wealth text-center py-3.5 rounded-xl text-xs font-black uppercase transition">Choose Titan Leaves™</a>
+                    </div>
+
+                    <!-- Grand Architectural Resort -->
+                    <div class="f0rtress-glass p-6 rounded-3xl border border-zinc-800 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-black text-white mb-1">Grand Resort</h3>
+                            <div class="text-2xl font-black text-amber-400 mb-2 package-price" data-usd="11500">US$11,500</div>
+                            <div class="text-xs text-cyan-400 font-bold mb-4">8.5m × 4.5m · Architectural Freeform</div>
+                            <ul class="text-xs text-zinc-300 space-y-2 mb-6">
+                                <li>✓ Full commercial Titan Leaves™ filtration suite</li>
+                                <li>✓ Pre-plumbed solar heating & surge chamber</li>
+                                <li>✓ Natural stone coping + sheer waterfall descent</li>
+                                <li>✓ Designer travertine paving surrounds</li>
+                                <li>✓ Dedicated Diaspora 4K drone progress feed</li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/263784219178?text=Hi%20Demash%20Pools!%20I%20am%20interested%20in%20the%20Grand%20Resort%20Package%20(US$11,500)." target="_blank" class="bg-zinc-900 border border-zinc-700 hover:border-gold text-white text-center py-3 rounded-xl text-xs font-black uppercase transition">Book Grand Resort</a>
+                    </div>
+                </div>
+
+                <!-- DIRECT SITE SURVEY & DIASPORA CONSULTATION FORM -->
+                <div class="f0rtress-glass p-8 md:p-10 rounded-3xl border border-zinc-800">
+                    <div class="text-xs font-black text-cyan-400 tracking-widest uppercase mb-1">Direct Engineering Consultation</div>
+                    <h3 class="text-2xl font-black text-white mb-2">Schedule a Site Survey or Request Diaspora Planning</h3>
+                    <p class="text-xs text-zinc-400 mb-6">Register your project directly with Director Eng. Liberman Magaya.</p>
+
+                    <form id="lead-form" onsubmit="submitLead(event)">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <label class="text-[10px] font-black text-zinc-400 uppercase tracking-widest block mb-1">Full Name</label>
+                                <input type="text" id="lead-name" class="w-full" placeholder="e.g. Dr. Nyasha Makoni" required>
+                            </div>
+                            <div>
+                                <label class="text-[10px] font-black text-zinc-400 uppercase tracking-widest block mb-1">WhatsApp Phone (with Country Code)</label>
+                                <input type="tel" id="lead-phone" class="w-full" placeholder="e.g. +44 7891 234567 or +263 77..." required>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                            <div>
+                                <label class="text-[10px] font-black text-zinc-400 uppercase tracking-widest block mb-1">Your Location / Residence</label>
+                                <select id="lead-country" class="w-full">
+                                    <option value="UK">United Kingdom (London, Manchester, Birmingham)</option>
+                                    <option value="USA">United States & Canada</option>
+                                    <option value="SA">South Africa (Johannesburg, Cape Town)</option>
+                                    <option value="AUS">Australia & New Zealand</option>
+                                    <option value="ZIM" selected>Zimbabwe (Harare, Norton, Bulawayo)</option>
+                                    <option value="OTHER">Other Diaspora Region</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="text-[10px] font-black text-zinc-400 uppercase tracking-widest block mb-1">Property Suburb in Zimbabwe</label>
+                                <input type="text" id="lead-suburb" class="w-full" placeholder="e.g. Borrowdale, Highlands, Norton, etc." required>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn-wealth w-full py-4 text-sm uppercase italic tracking-widest shadow-xl">
+                            📋 Submit Project & Open WhatsApp Confirmation
+                        </button>
+                    </form>
+                    <div id="form-msg" class="hidden mt-4 text-xs font-bold text-emerald-400 text-center"></div>
+                </div>
+            </section>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="f0rtress-glass border-t border-zinc-800 py-10 px-6 text-center text-xs text-zinc-400 mt-16">
+            <div class="max-w-4xl mx-auto space-y-2">
+                <p id="footerBrand" class="text-sm font-black text-white">Demash Dzimbabwe Pools (Pvt) Ltd</p>
+                <p id="footerLocation">K17412 Katanga, Norton · Serving Greater Harare & All Zimbabwe Provinces</p>
+                <p class="text-amber-400 font-bold">Director Eng. Liberman Magaya: +263 78 421 9178</p>
+                <p class="text-[10px] text-zinc-500 pt-2">© 2026 Demash Global. V60 Singularity & World Markets Unified. Built to Titan Levels.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- INVISIBLE HQ: THE REVENUE FORTRESS -->
+    <div id="phantomHQ" class="hidden min-h-screen p-8 bg-black">
+        <header class="flex justify-between items-center mb-16 border-b border-zinc-800 pb-8">
+            <h1 class="text-5xl font-black italic text-money uppercase">FINANCE <span class="text-white">HQ</span></h1>
+            <button onclick="toggleHQ()" class="bg-white text-black px-10 py-4 rounded-full font-black text-xs uppercase hover:bg-money transition">Showroom</button>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16 text-center">
+            <div class="f0rtress-glass p-10 rounded-[3rem] border-l-4 border-money">
+                <p class="text-[10px] text-zinc-500 uppercase font-black">Net Profit Lock</p>
+                <div class="text-5xl font-black text-money">37.0%</div>
+                <p class="text-[8px] text-zinc-500 mt-2">Mathematically Forced Margin</p>
+            </div>
+            <div class="f0rtress-glass p-10 rounded-[3rem] border-l-4 border-cyan-500">
+                <p class="text-[10px] text-zinc-500 uppercase font-black">Brokerage Fee</p>
+                <div class="text-5xl font-black text-white">15.0%</div>
+                <p class="text-[8px] text-cyan-500 mt-2">Shark Referral Protocol Active</p>
+            </div>
+            <div class="f0rtress-glass p-10 rounded-[3rem] border-l-4 border-gold">
+                <p class="text-[10px] text-zinc-500 uppercase font-black">Zim Hub Fund</p>
+                <div id="hubVault" class="text-4xl font-black text-gold">$0.00</div>
+                <p class="text-[8px] text-gold mt-2">Norton Digital Headquarters (10%)</p>
+            </div>
+            <div class="f0rtress-glass p-10 rounded-[3rem] border-l-4 border-white">
+                <p class="text-[10px] text-zinc-500 uppercase font-black">Lead Sync</p>
+                <div class="text-4xl font-black text-white">1.0T</div>
+                <p class="text-[8px] text-zinc-400 mt-2">Trillion-Point Deep Fetch</p>
+            </div>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-10">
+            <div class="bg-zinc-950 p-12 rounded-[4rem] border border-zinc-900">
+                <h3 class="text-cyan-500 font-black mb-8 uppercase text-xs tracking-widest italic">Real-Time Revenue Intercept</h3>
+                <div id="realLogs" class="h-96 overflow-y-auto text-[10px] font-mono space-y-2 text-zinc-500 boq-scroll">
+                    [SYSTEM READY]: Simulators Purged. Monitoring legitimate world wealth events...<br>
+                </div>
+            </div>
+            <div class="bg-zinc-950 p-12 rounded-[4rem] border border-zinc-900">
+                <h3 class="text-white font-black mb-8 uppercase text-xs">Workforce & Logistics Audit</h3>
+                <div id="staffStatus" class="space-y-4">
+                    <!-- Departments -->
+                </div>
+            </div>
+        </div>
+
+        <!-- LIVE GLOBAL CLIENT LEADS TABLE IN HQ -->
+        <div class="mt-10 bg-zinc-950 p-10 rounded-[4rem] border border-zinc-900">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-gold font-black uppercase text-xs tracking-widest italic">Live Global Client Inquiries</h3>
+                <span class="text-[10px] font-mono text-zinc-400">Direct Diaspora Pipeline</span>
+            </div>
+            <div id="hqLeadsTable" class="overflow-x-auto text-[11px] font-mono text-zinc-300">
+                Loading live leads...
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let isHQ = false; let vTotal = 0;
+        const myWA = "263784219178";
+        let lastGeneratedBOQText = "";
+        let simMode = 'day';
+
+        // Exchange rates against USD
+        const CURRENCIES = {
+            USD: { symbol: 'US$', rate: 1.0, decimals: 0 },
+            GBP: { symbol: '£', rate: 0.79, decimals: 0 },
+            ZAR: { symbol: 'R ', rate: 18.0, decimals: 0 },
+            EUR: { symbol: '€', rate: 0.92, decimals: 0 },
+            AUD: { symbol: 'A$', rate: 1.52, decimals: 0 },
+            CAD: { symbol: 'C$', rate: 1.38, decimals: 0 },
+            AED: { symbol: 'AED ', rate: 3.67, decimals: 0 }
+        };
+        let activeCurrency = 'USD';
+        let isPartnerVerified = false;
+
+        const EMPIRE_MATRIX = {
+            zim: {
+                nation: "Zimbabwe",
+                hubTag: "ZIMBABWE HUB · SADC STANDARD",
+                brandTitle: "DEMASH <span class='text-cyan-400 uppercase text-xs not-italic font-bold'>ZIMBABWE</span>",
+                hook: "Zimbabwe's Master Architect. Based in Norton, Building Legacies with Titan Leaves™.",
+                heroHeadline: "Make <br><span class='text-money'>Wealth.</span>",
+                heroSub: "Universal Construction Singularity. 1 Trillion Points of Technical Integrity. 37% Margin Security. No Simulations.",
+                footerBrand: "Demash Dzimbabwe Pools (Pvt) Ltd",
+                footerLocation: "K17412 Katanga, Norton · Serving Greater Harare & All Zimbabwe Provinces",
+                labor: 15, spec: 45, mat: 165, cur: "$", currency: "USD",
+                geos: [
+                    { val: "1.35", dist: "12", text: "Norton & Katanga · Active Black Cotton Clay (Expansive Vertisol)", desc: "🚜 Norton Black Cotton Clay: High soil heave in rainy season. Requires 150mm Crushed Granite Drainage Ballast + Dual Y12 High-Tensile Steel Cage + Sub-base French drain." },
+                    { val: "1.75", dist: "48", text: "Borrowdale & Brooke · Granite Bedrock & Rock Outcrops", desc: "⛏️ Borrowdale Granite Bedrock: Heavy granite outcrops. Requires pneumatic rock-breaker grading. Anti-slip bedrock anchoring with zero settlement risk." },
+                    { val: "1.45", dist: "52", text: "Glen Lorne & Chisipite · Steep Hillside & Perched Water", desc: "⛰️ Glen Lorne Hillside Slope: Steep contour & perched groundwater. Requires hydrostatic pressure-relief valve in main drain + tiered reinforced ring beam." },
+                    { val: "1.0", dist: "32", text: "Msasa & Eastlea · Stable Sandy Loam Sub-base", desc: "🌱 Msasa Sandy Loam: Stable sub-base with natural drainage. Rapid laser compaction & standard monolithic gunite shell." },
+                    { val: "1.20", dist: "420", text: "Bulawayo & Matabeleland · Kalahari Sand & Calcrete", desc: "☀️ Bulawayo & Matabeleland: Dry Kalahari sand & calcrete. Geotextile moisture-lock underlay + crystal silicate curing seal for arid heat." }
+                ]
+            },
+            uk: {
+                nation: "United Kingdom",
+                hubTag: "UNITED KINGDOM HUB · DIASPORA STANDARD",
+                brandTitle: "DEMASH <span class='text-amber-400 uppercase text-xs not-italic font-bold'>UNITED KINGDOM</span>",
+                hook: "UK Diaspora Turnkey Engineering. Delivering Guaranteed Luxury Pools with British Structural Standards.",
+                heroHeadline: "British <br><span class='text-cyan-400'>Standard.</span>",
+                heroSub: "Fixed Sterling Contracts, 4K Drone Milestone Video Feeds, and Direct WhatsApp Project Management from London & Birmingham.",
+                footerBrand: "Demash International (UK) Ltd",
+                footerLocation: "London (Mayfair) & Birmingham Operations Liaison · Global Turnkey Pools",
+                labor: 40, spec: 95, mat: 280, cur: "£", currency: "GBP",
+                geos: [
+                    { val: "1.35", dist: "12", text: "UK Diaspora Building in Zimbabwe (Norton / Harare)", desc: "✈️ UK Diaspora Build: Complete Turnkey fixed in £ Sterling with weekly 4K drone progress feeds." },
+                    { val: "1.40", dist: "25", text: "Greater London & Surrey · Clay & Chalk Sub-strata", desc: "🇬🇧 London & South East: British BS-8007 water retaining standards with reinforced drainage sump." },
+                    { val: "1.50", dist: "45", text: "Midlands & Northern UK · Compact Glacial Till & Sandstone", desc: "🇬🇧 UK Midlands: Frost-heave protection barrier + insulated thermal shell envelope." }
+                ]
+            },
+            sa: {
+                nation: "South Africa",
+                hubTag: "SOUTH AFRICA HUB · SADC STANDARD",
+                brandTitle: "DEMASH <span class='text-emerald-400 uppercase text-xs not-italic font-bold'>SOUTH AFRICA</span>",
+                hook: "South Africa SADC Engineering. SANS 10400 Precision, Direct Rand Invoicing & High-Velocity Turnkey Delivery.",
+                heroHeadline: "SADC <br><span class='text-money'>Prestige.</span>",
+                heroSub: "Direct ZAR Remittance Billing, Cross-Border Material Logistics & Monolithic Gunite Shells with Titan Leaves™ System.",
+                footerBrand: "Demash South Africa Operations",
+                footerLocation: "Sandton, Johannesburg & Umhlanga Liaison · Regional Pool Engineering",
+                labor: 28, spec: 75, mat: 220, cur: "R ", currency: "ZAR",
+                geos: [
+                    { val: "1.35", dist: "12", text: "SA Diaspora Building in Zimbabwe (Harare / Bulawayo)", desc: "✈️ SA Diaspora Build: Direct Rand invoicing with live milestone updates." },
+                    { val: "1.35", dist: "20", text: "Gauteng (Sandton / Pretoria) · Red Dolomite & Clay", desc: "🇿🇦 Gauteng Highveld: SANS 10400 dolomite stabilization + dual rebar grid." },
+                    { val: "1.55", dist: "35", text: "Western Cape (Cape Town) · Coastal Sand & Table Mountain Granite", desc: "🇿🇦 Western Cape: Coastal salt-chlorination grade gunite + wind-deflecting weir." }
+                ]
+            },
+            dubai: {
+                nation: "United Arab Emirates",
+                hubTag: "DUBAI & UAE HUB · GULF STANDARD",
+                brandTitle: "DEMASH <span class='text-gold uppercase text-xs not-italic font-bold'>DUBAI & UAE</span>",
+                hook: "High-Rise Hydraulics & Luxury Sovereignty. World-Class UAE Standards in Desert Conditions.",
+                heroHeadline: "Desert <br><span class='text-gold'>Sovereignty.</span>",
+                heroSub: "Extreme Climate Thermal Shielding, High-Volume Desalination Hydraulics & Luxury Resort Construction.",
+                footerBrand: "Demash Middle East LLC",
+                footerLocation: "Business Bay & Dubai Marina · UAE Gulf Construction Node",
+                labor: 35, spec: 95, mat: 480, cur: "AED ", currency: "AED",
+                geos: [
+                    { val: "1.25", dist: "18", text: "Dubai Marina & Palm Jumeirah · Coastal Saline Sand", desc: "🇦🇪 UAE Coastal: High-saline sulfate-resisting cement + titanium heat-pump chiller." },
+                    { val: "1.65", dist: "35", text: "Emirates Hills & Arabian Ranches · Desert Caliche & Silt", desc: "🇦🇪 Desert Inland: Heavy thermal expansion joints + rapid dust-clearing vortex skimmers." }
+                ]
+            },
+            usa: {
+                nation: "United States",
+                hubTag: "AMERICAS HUB · ACI STANDARD",
+                brandTitle: "DEMASH <span class='text-cyan-400 uppercase text-xs not-italic font-bold'>AMERICAS</span>",
+                hook: "Americas Elite Structural Engineering. ACI-318 Gunite Monoliths for Discerning Clients.",
+                heroHeadline: "American <br><span class='text-white'>Standard.</span>",
+                heroSub: "ACI-318 Reinforced Gunite Monoliths. Diaspora Property Investment with Full Milestones.",
+                footerBrand: "Demash Americas Engineering",
+                footerLocation: "Miami, Florida & Houston, Texas Liaison · Elite Pool Construction",
+                labor: 150, spec: 450, mat: 590, cur: "$", currency: "USD",
+                geos: [
+                    { val: "1.35", dist: "12", text: "US Diaspora Building in Zimbabwe (Harare / Norton)", desc: "✈️ US Diaspora Build: Full USD milestone escrow & weekly video progress reports." },
+                    { val: "1.35", dist: "25", text: "Florida & Gulf Coast · Oolitic Limestone & High Water Table", desc: "🇺🇸 US Sunbelt: ACI 318 hydrostatic relief + hurricane-grade perimeter reinforcement." },
+                    { val: "1.55", dist: "40", text: "Texas & Southwest · Expansive Houston / Austin Clay", desc: "🇺🇸 US Southwest: Deep bell-bottom piers & heavy expansive soil isolation." }
+                ]
+            },
+            asia: {
+                nation: "Asia-Pacific",
+                hubTag: "ASIA-PACIFIC HUB · ISO STANDARD",
+                brandTitle: "DEMASH <span class='text-cyan-400 uppercase text-xs not-italic font-bold'>ASIA-PACIFIC</span>",
+                hook: "Asian Industrial Fast-Track Infrastructure. High-Velocity Modular Builds.",
+                heroHeadline: "Precision <br><span class='text-cyan-400'>Industrial.</span>",
+                heroSub: "ISO-9001 Modular Shell Physics, Industrial Grade Swept Hydraulics & Nanotech Plasters.",
+                footerBrand: "Demash Asia-Pacific",
+                footerLocation: "Singapore & Shanghai Operations Node · Industrial Pool Systems",
+                labor: 140, spec: 420, mat: 510, cur: "$", currency: "USD",
+                geos: [
+                    { val: "1.30", dist: "15", text: "Singapore & Coastal Asia · Reclaimed Marine Clay & Silt", desc: "🌏 Asia Coastal: Piled foundation anchoring + dynamic water-seal lining." },
+                    { val: "1.45", dist: "30", text: "Inland Metros · High-Density Urban Ground", desc: "🌏 High-Density Urban: Vibration-dampened gunite casting with high-cycle filtration." }
+                ]
+            }
+        };
+
+        let currentActiveRegion = 'zim';
+
+        function detectUserGeography() {
+            try {
+                const tz = Intl.DateTimeFormat().resolvedOptions().timeZone || "";
+                const lang = (navigator.language || "").toLowerCase();
+                if (tz.includes("Harare") || tz.includes("Maputo") || tz.includes("Lusaka") || tz.includes("Gaborone")) return "zim";
+                if (tz.includes("London") || tz.includes("Dublin") || lang.includes("en-gb")) return "uk";
+                if (tz.includes("Johannesburg") || lang.includes("en-za") || lang.includes("af")) return "sa";
+                if (tz.includes("Dubai") || tz.includes("Muscat") || tz.includes("Riyadh") || tz.includes("Qatar")) return "dubai";
+                if (tz.includes("New_York") || tz.includes("Chicago") || tz.includes("Los_Angeles") || tz.includes("Denver") || lang.includes("en-us")) return "usa";
+                if (tz.includes("Tokyo") || tz.includes("Singapore") || tz.includes("Hong_Kong") || tz.includes("Shanghai")) return "asia";
+            } catch(e) {}
+            return "zim";
+        }
+
+        function setUserRegion(region) {
+            const d = EMPIRE_MATRIX[region] || EMPIRE_MATRIX.zim;
+            currentActiveRegion = region;
+            
+            const regSelect = document.getElementById('userRegionSelect');
+            if (regSelect && regSelect.value !== region) {
+                regSelect.value = region;
+            }
+
+            const socTag = document.getElementById('sociologyTag');
+            if (socTag) socTag.innerText = d.hubTag;
+
+            const brandTitle = document.getElementById('brandTitle');
+            if (brandTitle) brandTitle.innerHTML = d.brandTitle;
+
+            const eqHook = document.getElementById('eqHook');
+            if (eqHook) eqHook.innerText = d.hook;
+
+            const heroHead = document.getElementById('heroHeadline');
+            if (heroHead) heroHead.innerHTML = d.heroHeadline;
+
+            const heroSub = document.getElementById('heroSub');
+            if (heroSub) heroSub.innerText = d.heroSub;
+
+            const footBrand = document.getElementById('footerBrand');
+            if (footBrand) footBrand.innerText = d.footerBrand;
+
+            const footLoc = document.getElementById('footerLocation');
+            if (footLoc) footLoc.innerText = d.footerLocation;
+
+            // Update Currency to match customer's nation
+            const currSelect = document.getElementById('currency-select');
+            if (currSelect) {
+                currSelect.value = d.currency;
+                activeCurrency = d.currency;
+            }
+
+            // Update Ground Context dropdown specifically for that nation
+            const geoSelect = document.getElementById('geo');
+            if (geoSelect && d.geos) {
+                geoSelect.innerHTML = "";
+                d.geos.forEach((g, idx) => {
+                    const opt = document.createElement('option');
+                    opt.value = g.val;
+                    opt.setAttribute('data-dist', g.dist);
+                    opt.textContent = g.text;
+                    if (idx === 0) opt.selected = true;
+                    geoSelect.appendChild(opt);
+                });
+            }
+
+            onGeoChanged();
+            updatePackagePrices();
+            logHQ("Region synchronized to: " + d.nation + " Hub.");
+        }
+
+        window.onload = () => {
+            const p = new URLSearchParams(window.location.search);
+            if(p.get('access') === 'K17412_TITAN' || p.get('partner') === 'true') {
+                isPartnerVerified = true;
+                document.getElementById('adminTrigger').style.display = 'block';
+                logHQ("Access Protocol SOVEREIGN verified (K17412_TITAN). Partner & Finance Shield Active.");
+            }
+            initCanvas();
+            fetchHQLeads();
+            const initialRegion = p.get('region') || detectUserGeography();
+            setUserRegion(initialRegion);
+        }
+
+        function switchView(mode) {
+            const vV60 = document.getElementById('viewV60');
+            const vWorld = document.getElementById('viewWorld');
+            const btnV60 = document.getElementById('btnModeV60');
+            const btnWorld = document.getElementById('btnModeWorld');
+
+            if(mode === 'world' && !isPartnerVerified) {
+                const pass = prompt("🔒 DEMASH PARTNER & INVESTOR GATEWAY\nThis international market portal is restricted to Demash executive leadership and verified partners.\n\nEnter Partner Access Key:");
+                if(pass === 'K17412_TITAN' || pass === 'TITAN' || pass === 'DEMASH') {
+                    isPartnerVerified = true;
+                    alert("✓ Access Granted: Partner & World Markets Gateway Unlocked.");
+                } else {
+                    if(pass !== null && pass.trim() !== "") {
+                        alert("Invalid Key. Client Showroom remains active.");
+                    }
+                    return;
+                }
+            }
+
+            if(mode === 'v60') {
+                vV60.classList.remove('hidden');
+                vWorld.classList.add('hidden');
+                btnV60.classList.add('active');
+                btnV60.classList.remove('text-zinc-400');
+                btnWorld.classList.remove('active');
+                btnWorld.classList.add('text-zinc-400');
+            } else {
+                vV60.classList.add('hidden');
+                vWorld.classList.remove('hidden');
+                btnWorld.classList.add('active');
+                btnWorld.classList.remove('text-zinc-400');
+                btnV60.classList.remove('active');
+                btnV60.classList.add('text-zinc-400');
+            }
+        }
+
+        function changeCurrency(curr) {
+            activeCurrency = curr;
+            updatePackagePrices();
+            runV60Omni();
+        }
+
+        function updatePackagePrices() {
+            const cfg = CURRENCIES[activeCurrency];
+            document.querySelectorAll('.package-price').forEach(el => {
+                const usd = parseFloat(el.getAttribute('data-usd'));
+                const converted = Math.round(usd * cfg.rate);
+                el.textContent = cfg.symbol + converted.toLocaleString();
+            });
+
+            const benchUsd = 6500;
+            const benchConverted = Math.round(benchUsd * cfg.rate);
+            document.getElementById('world-quote-val').textContent = cfg.symbol + benchConverted.toLocaleString();
+        }
+
+        function syncSociology() {
+            const m = document.getElementById('region') ? document.getElementById('region').value : 'zim';
+            const d = EMPIRE_MATRIX[m] || EMPIRE_MATRIX.zim;
+            document.getElementById('sociologyTag').innerText = d.tag;
+            document.getElementById('eqHook').innerText = d.hook;
+            logHQ(\`Sociology: System mutated to \${m.toUpperCase()} regional market dynamics.\`);
+            runV60Omni();
+        }
+
+        async function humanType(id, text) {
+            const el = document.getElementById(id); el.innerHTML = ""; el.classList.add('typing');
+            const start = performance.now();
+            for(let i=0; i<text.length; i++) {
+                if(text[i] === '<') {
+                    let end = text.indexOf('>', i); el.innerHTML += text.substring(i, end + 1); i = end;
+                } else {
+                    el.innerHTML += text[i];
+                    await new Promise(r => setTimeout(r, 10));
+                    el.scrollTop = el.scrollHeight;
+                }
+            }
+            const end = performance.now();
+            document.getElementById('ver').innerText = \`SYNC SPEED: \${(end-start).toFixed(2)}ms\`;
+            el.classList.remove('typing');
+        }
+
+        function toggleHQ() {
+            isHQ = !isHQ;
+            document.getElementById('mainPlatform').style.display = isHQ ? 'none' : 'block';
+            document.getElementById('phantomHQ').style.display = isHQ ? 'block' : 'none';
+            if(isHQ) {
+                document.getElementById('v-wake').play().catch(()=>{});
+                updateDepts();
+                fetchHQLeads();
+            }
+        }
+
+        function handleUpload(e) {
+            const file = e.target.files[0];
+            if(!file) return;
+            logHQ(\`FILE UPLOADED: \${file.name}. Beginning Architectural Analysis.\`);
+            
+            const laser = document.getElementById('laserScan');
+            const title = document.getElementById('uploadTitle');
+            const sub = document.getElementById('uploadSub');
+            laser.classList.remove('hidden');
+            title.innerText = "AI SCANNING PLAN ELEVATIONS...";
+            sub.innerText = "Reading structural cross-sections & calculating excavation volume...";
+
+            setTimeout(() => {
+                laser.classList.add('hidden');
+                title.innerText = "PLAN ANALYZED: " + file.name.toUpperCase();
+                sub.innerText = "Identified 38.5 sqm perimeter · Soil bearing capacity 280kPa · Titan Leaves™ routing set.";
+                document.getElementById('sqm').value = 38;
+                runV60Omni();
+                alert("AI Structural Guardian analyzed " + file.name + ". Dimensions locked to 38sqm. Synthesizing Particle-Level BOQ with Titan Leaves™ specs...");
+            }, 1800);
+        }
+
+        function onGeoChanged() {
+            const geoSelect = document.getElementById('geo');
+            if (!geoSelect || geoSelect.selectedIndex < 0) return;
+            const selectedOpt = geoSelect.options[geoSelect.selectedIndex];
+            const dist = selectedOpt.getAttribute('data-dist') || 12;
+            document.getElementById('dist').value = dist;
+
+            const d = EMPIRE_MATRIX[currentActiveRegion] || EMPIRE_MATRIX.zim;
+            const geoItem = (d.geos && d.geos[geoSelect.selectedIndex]) ? d.geos[geoSelect.selectedIndex] : null;
+            const intelBox = document.getElementById('soilIntelDisplay');
+            if (intelBox && geoItem && geoItem.desc) {
+                intelBox.innerHTML = '<span class="text-zinc-200">' + geoItem.desc + '</span>';
+            }
+            runV60Omni();
+        }
+
+        async function runV60Omni() {
+            const m = currentActiveRegion || 'zim';
+            const sqm = parseFloat(document.getElementById('sqm').value) || 32;
+            const dist = parseFloat(document.getElementById('dist').value) || 12;
+            const geoSelect = document.getElementById('geo');
+            const geo = parseFloat(geoSelect.value);
+            const geoName = geoSelect.options[geoSelect.selectedIndex].text.split('·')[0].trim();
+            const d = EMPIRE_MATRIX[m];
+            const display = document.getElementById('boqDisplay');
+
+            // --- REVENUE PHYSICS --- 
+            const days = Math.ceil(sqm / 1.45);
+            const labor = ((8 * d.labor) + (3 * d.spec)) * days;
+            const logistics = (dist * 2.8 * 8) + 600; // Norton base trips
+            const matCost = sqm * d.mat * geo;
+            const titanLeavesAddon = 230; // High-Capacity Vortex Weir + Pre-Pump Debris Interceptor
+            const totalCost = labor + logistics + matCost + 1500 + titanLeavesAddon;
+            const finalPriceUsd = totalCost / 0.63; // HARD-LOCK 37% PROFIT
+            const profitUsd = finalPriceUsd * 0.37;
+
+            const currCfg = CURRENCIES[activeCurrency];
+            const convertedPrice = Math.round(finalPriceUsd * currCfg.rate);
+
+            // Update 3D Canvas
+            drawPool(sqm);
+
+            await humanType('boqDisplay', \`<b class="text-cyan-400">Universal Architect:</b> "Calibrated for \${geoName}. Indexing real ZWS-392 standards, \${dist}km logistics radius from Norton base, Y12 High-tensile steel count, and Titan Leaves™ Jacaranda/Msasa foliage defense. Orchestrating 8 General Hands and 3 Specialists. Hard-locking 37.0% Sovereign Margin..."\`);
+            
+            const boq = \`
+<br><br>
+<b class="text-money font-black uppercase italic tracking-widest">--- OFFICIAL SOVEREIGN BOQ V60 ---</b><br>
+HQ: KATANGA NORTON | STATUS: MONETIZED | REF: REAL-DATA<br>
+-------------------------------------------<br>
+[GEOGRAPHICAL PROFILE & REALISTIC TIMELINE]<br>
+• <b class="text-cyan-400">Location Context:</b> \${geoSelect.options[geoSelect.selectedIndex].text}<br>
+• <b class="text-white">Logistics Haulage:</b> \${dist}km from Norton Central Base<br>
+• <b class="text-amber-400">Realistic Build Duration:</b> \${Math.round(days * 1.2)} to \${Math.round(days * 1.5)} Business Days (Excavation · Dual Cage · 30MPa Gunite · 14-day Hydraulic Cure)<br>
+<br>
+[STRUCTURAL MONOLITH - PARTICLE DETAIL]<br>
+• <b class="text-white">Steel Cage:</b> Y12 High-Tensile + Y10 Ribs (\${Math.ceil(sqm*0.9)} lngths)<br>
+• <b class="text-white">Links:</b> Y8 Mild Steel @ 150mm centers<br>
+• <b class="text-white">Binding:</b> 1.6mm Annealed Professional Grade (itemized)<br>
+• <b class="text-white">Concrete:</b> Sand, Stone, PPC Bags calculated per grain (\${Math.ceil(sqm*0.18*7.5)} Bags PPC 42.5R)<br>
+<br>
+[HYDRAULICS & TITAN LEAVES™ DEFENSE]<br>
+• <b class="text-emerald-400">Titan Leaves™ Vortex Weir:</b> Anti-Clog Jacaranda/Msasa Trap ($145)<br>
+• <b class="text-emerald-400">Pre-Pump Interceptor:</b> Cyclonic High-Volume Leaf Canister ($85)<br>
+• 50mm Class 12 High-Pressure Piping System with Sweep Bends<br>
+• Mobilization Hub: Norton Node (\${dist}km radius applied)<br>
+• Workforce: 8 Hands + 3 Structural Specialists Staggered<br>
+<br>
+[OFFICIAL FIX & SUPPLY OFFER]<br>
+<b class="text-3xl md:text-4xl bg-green-600 text-white p-3 px-6 font-black italic uppercase block text-center mt-6 shadow-2xl">INVESTMENT: \${currCfg.symbol}\${convertedPrice.toLocaleString(undefined,{minimumFractionDigits:2})}</b><br>
+<p class="text-[10px] text-zinc-400 mt-4 italic text-center font-bold">37.0% PROFIT PROTECTED | WORLD-STANDARD INTEGRITY</p>
+<br>
+\${isHQ ? \`<div class="p-3 border border-amber-500 bg-zinc-900 rounded-xl text-[10px]"><b>[REAL REVENUE AUDIT]</b><br>Labor Pool Cost: $\${labor.toLocaleString()}<br>Subtotal Cost: $\${totalCost.toLocaleString()}<br><b class="text-money text-lg">NET 37% PROFIT: $\${profitUsd.toLocaleString()}</b></div>\` : ''}
+<br>
+<button onclick="window.location.href='https://wa.me/\${myWA}?text=Accept_V60_Offer_\${m}_\${sqm}sqm_TitanLeaves'" class="w-full bg-white text-black py-6 rounded-[2.5rem] font-black uppercase text-sm shadow-xl hover:bg-money transition">Initiate Global Handshake (Eng. Liberman)</button>
+            \`;
+            lastGeneratedBOQText = \`DEMASH GLOBAL SOVEREIGN BOQ V60\\nScale: \${sqm} sqm | Node: \${m.toUpperCase()}\\nInvestment: \${currCfg.symbol}\${convertedPrice.toLocaleString()}\\nTitan Leaves™ Foliage System Included\\nDirector Eng. Liberman Magaya: +263 78 421 9178\`;
+            await humanType('boqDisplay', display.innerHTML + boq);
+            if(isHQ) {
+                vTotal += (profitUsd * 0.10);
+                document.getElementById('hubVault').innerText = "$" + vTotal.toLocaleString();
+                logHQ(\`REVENUE: $\${profitUsd.toLocaleString()} profit secured. 10% synced to Physical Hub fund.\`);
+            }
+        }
+
+        function logHQ(msg) {
+            if(!isHQ) return;
+            const log = document.getElementById('realLogs');
+            const div = document.createElement('div');
+            div.innerHTML = \`[\${new Date().toLocaleTimeString()}] 🛡️ <span class="text-white font-black uppercase">FORTRESS:</span> \${msg}\`;
+            log.prepend(div);
+        }
+
+        function updateDepts() {
+            const p = document.getElementById('staffStatus');
+            const depts = [
+                { name: "Structural Guardian", stat: "Analyzing Rebar Splicing & Soil Profile", color: "text-cyan-400" },
+                { name: "Revenue Merchant", stat: "37% Margin Hard-Locked & Accounts Clearance Active", color: "text-money" },
+                { name: "Titan Leaves™ Sentinel", stat: "Zero Pump Cavitation Filtration Online", color: "text-emerald-400" },
+                { name: "Linguistic AI", stat: "Sociological Mutation Active (Zim/Dubai/Asia/USA)", color: "text-gold" }
+            ];
+            p.innerHTML = depts.map(d => \`<div class="dept-card"><b class="\${d.color} uppercase text-[10px]">\${d.name}</b><br><span class="text-zinc-400 italic text-[10px]">\${d.stat}</span></div>\`).join('');
+        }
+
+        function fetchHQLeads() {
+            fetch('/api/leads')
+                .then(r => r.json())
+                .then(data => {
+                    const table = document.getElementById('hqLeadsTable');
+                    if(!table) return;
+                    let html = '<table class="w-full text-left"><thead><tr class="text-zinc-500 border-b border-zinc-800 pb-2"><th class="py-2">Client</th><th>Country</th><th>Phone</th><th>Suburb</th><th>Budget</th><th>Action</th></tr></thead><tbody>';
+                    data.leads.forEach(l => {
+                        html += \`<tr class="border-b border-zinc-900 py-2 hover:bg-zinc-900/50">
+                            <td class="py-2.5 font-bold text-white">\${l.clientName}</td>
+                            <td>\${l.country}</td>
+                            <td class="text-cyan-400">\${l.phone}</td>
+                            <td>\${l.suburb}</td>
+                            <td class="text-money font-bold">\${l.budget}</td>
+                            <td><a href="https://wa.me/\${l.phone.replace(/[^0-9]/g,'')}" target="_blank" class="text-gold hover:underline">WhatsApp</a></td>
+                        </tr>\`;
+                    });
+                    html += '</tbody></table>';
+                    table.innerHTML = html;
+                }).catch(()=>{});
+        }
+
+        function submitLead(e) {
+            e.preventDefault();
+            const name = document.getElementById('lead-name').value;
+            const phone = document.getElementById('lead-phone').value;
+            const country = document.getElementById('lead-country').value;
+            const suburb = document.getElementById('lead-suburb').value;
+
+            fetch('/api/leads', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    clientName: name,
+                    phone: phone,
+                    country: country,
+                    suburb: suburb,
+                    poolType: "Titan Leaves™ Turnkey Edition",
+                    dimensions: "Custom",
+                    currency: activeCurrency,
+                    budget: document.getElementById('world-quote-val').textContent
+                })
+            }).then(r => r.json()).then(data => {
+                const msg = document.getElementById('form-msg');
+                msg.textContent = '✓ Inquiry registered! Connecting you with Director Eng. Liberman on WhatsApp...';
+                msg.classList.remove('hidden');
+
+                const waText = 'Mhoroi Eng. Liberman Magaya! My name is ' + name + ' from ' + country + '. I am inquiring for a pool at my property in ' + suburb + ', Zimbabwe with the Titan Leaves™ specification. Please confirm site survey schedule.';
+                setTimeout(() => {
+                    window.open('https://wa.me/263784219178?text=' + encodeURIComponent(waText), '_blank');
+                }, 1200);
+            }).catch(err => {
+                window.open('https://wa.me/263784219178', '_blank');
+            });
+        }
+
+        function printBOQ() {
+            window.print();
+        }
+
+        function copyBOQ() {
+            if(!lastGeneratedBOQText) {
+                alert("Please click 'Synthesize Capital' first to generate your BOQ.");
+                return;
+            }
+            navigator.clipboard.writeText(lastGeneratedBOQText).then(() => {
+                alert("✓ Official Sovereign BOQ copied to clipboard! Ready to paste into WhatsApp or Email.");
+            });
+        }
+
+        function scrollToEstimator() {
+            document.getElementById('estimator').scrollIntoView({behavior:'smooth'});
+        }
+
+        // --- 3D / 2D POOL ARCHITECTURAL CANVAS SIMULATOR ---
+        function initCanvas() {
+            drawPool(32);
+        }
+
+        function setSimLighting(mode) {
+            simMode = mode;
+            const sqm = parseFloat(document.getElementById('sqm').value) || 32;
+            drawPool(sqm);
+        }
+
+        function drawPool(sqm) {
+            const canvas = document.getElementById('poolCanvas');
+            if(!canvas) return;
+            const ctx = canvas.getContext('2d');
+            const w = canvas.width;
+            const h = canvas.height;
+
+            ctx.clearRect(0, 0, w, h);
+
+            // Ground surround
+            const gradGround = ctx.createLinearGradient(0, 0, 0, h);
+            gradGround.addColorStop(0, '#041018');
+            gradGround.addColorStop(1, '#081D2A');
+            ctx.fillStyle = gradGround;
+            ctx.fillRect(0, 0, w, h);
+
+            // Coping & Decking
+            const poolW = Math.min(w * 0.72, 340 + (sqm * 6));
+            const poolH = 170;
+            const poolX = (w - poolW) / 2;
+            const poolY = (h - poolH) / 2 + 10;
+
+            // Coping ring (Bullnose Granite)
+            ctx.strokeStyle = '#c49746';
+            ctx.lineWidth = 14;
+            ctx.beginPath();
+            ctx.roundRect(poolX - 10, poolY - 10, poolW + 20, poolH + 20, 24);
+            ctx.stroke();
+
+            // Water Body
+            const waterGrad = ctx.createLinearGradient(poolX, poolY, poolX, poolY + poolH);
+            if(simMode === 'day') {
+                waterGrad.addColorStop(0, '#00b4d8');
+                waterGrad.addColorStop(0.5, '#0077b6');
+                waterGrad.addColorStop(1, '#023e8a');
+            } else {
+                waterGrad.addColorStop(0, '#03254c');
+                waterGrad.addColorStop(0.6, '#084887');
+                waterGrad.addColorStop(1, '#00f2ff'); // Cyan LED glow
+            }
+            ctx.fillStyle = waterGrad;
+            ctx.beginPath();
+            ctx.roundRect(poolX, poolY, poolW, poolH, 18);
+            ctx.fill();
+
+            // Waterline mosaic line
+            ctx.strokeStyle = '#00f2ff';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.roundRect(poolX + 2, poolY + 2, poolW - 4, poolH - 4, 16);
+            ctx.stroke();
+
+            // Titan Leaves™ Vortex Weir Skimmer indicator
+            ctx.fillStyle = '#00ff88';
+            ctx.beginPath();
+            ctx.arc(poolX + 35, poolY + 8, 7, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.fillStyle = '#ffffff';
+            ctx.font = '9px monospace';
+            ctx.fillText("🌿 Titan Leaves™ Weir", poolX + 48, poolY + 12);
+
+            // Safety steps
+            ctx.fillStyle = 'rgba(255,255,255,0.18)';
+            ctx.fillRect(poolX + poolW - 65, poolY + 20, 50, 24);
+            ctx.fillRect(poolX + poolW - 55, poolY + 44, 40, 24);
+
+            // Water caustic ripples
+            ctx.strokeStyle = 'rgba(255, 255, 255, 0.22)';
+            ctx.lineWidth = 1;
+            for(let i = 0; i < 4; i++) {
+                ctx.beginPath();
+                ctx.ellipse(poolX + (poolW * 0.3) + (i * 45), poolY + 85 + (i * 12), 35, 12, 0, 0, Math.PI * 2);
+                ctx.stroke();
+            }
+
+            document.getElementById('canvasDims').innerText = \`Scale: \${sqm} sqm (\${(sqm/3.5).toFixed(1)}m × 3.5m)\`;
+        }
+
+        // BINARY PULSAR: HARD ANTI-FREEZE
+        setInterval(() => {
+            console.clear();
+            const sent = document.getElementById('sentinel');
+            sent.innerText = "SENTINEL: PURGING"; sent.style.color = "yellow";
+            setTimeout(() => { sent.innerText = "SENTINEL: PERFECT"; sent.style.color = "#00ff88"; }, 600);
+        }, 15000);
+    </script>
+</body>
+</html>

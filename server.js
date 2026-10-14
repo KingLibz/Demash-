@@ -2,3 +2,4 @@ center; width: 100%; height: 44px; background: linear-gradient(135deg, #0284c7 0
 });
 app.use((err, req, res, next) => { res.status(200).send("Sovereign Protection Active."); });
 app.listen(SYSTEM_CONFIG.PORT);
+

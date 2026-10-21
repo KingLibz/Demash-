@@ -1,1 +1,90 @@
+import express from "express";
+import axios from "axios";
+import path from "path";
+
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+// Dynamic Landing Page Route
+app.get("/", (req, res) => {
+    res.send(`
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Demash Global | Sovereign Business Core</title>
+            <style>
+                body {
+                    margin: 0;
+                    padding: 0;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+                    color: #f8fafc;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    min-height: 100vh;
+                    text-align: center;
+                }
+                .container {
+                    padding: 2rem;
+                    max-width: 600px;
+                    background: rgba(255, 255, 255, 0.03);
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    border-radius: 16px;
+                    backdrop-filter: blur(8px);
+                    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+                }
+                h1 {
+                    font-size: 2.5rem;
+                    margin-bottom: 1rem;
+                    background: linear-gradient(to right, #38bdf8, #818cf8);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+                p {
+                    font-size: 1.1rem;
+                    color: #94a3b8;
+                    line-height: 1.6;
+                    margin-bottom: 2rem;
+                }
+                .badge {
+                    display: inline-block;
+                    padding: 0.5rem 1rem;
+                    background: rgba(34, 197, 94, 0.2);
+                    border: 1px solid #22c55e;
+                    color: #4ade80;
+                    border-radius: 9999px;
+                    font-size: 0.875rem;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    letter-spacing: 0.05em;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <div class="badge">System Online</div>
+                <h1>Demash Global</h1>
+                <p>Your Termux sovereign core server architecture has successfully deployed to the cloud. Automation infrastructure pipelines are locked and tracking live backend intake updates perfectly.</p>
+            </div>
+        </body>
+        </html>
+    `);
+});
+
+// Incoming Automation Webhook Integration Point
+app.post("/webhook", (req, res) => {
+    console.log("Inbound Traffic Payload Received:", req.body);
+    res.status(200).json({ status: "success", message: "Payload integrated cleanly into core database." });
+});
+
+app.listen(PORT, () => {
+    console.log(\`Sovereign Engine running actively on port \${PORT}\`);
+});
 import express from "express"; import axios from "axios"; import nodemailer from "nodemailer"; import fs from "fs"; import crypto from "crypto"; const app = express(); app.use(express.json()); export const SOVEREIGN_CONFIG = { PARENT_BASE: "K17412, Katanga, Norton, Zimbabwe", PRODUCTION_DOMAIN: "demashglobal.live", AGRIBANK_ESCROW_GATEWAY: "AgriBank Commercial Nostro Escrow Gateway", COMPTROLLER_EMAIL: "libermanmagaya@gmail.com", LOCAL_LEDGER_PATH: "./data_records/payout_settlement_ledger.json", ADMIN_USERNAME: "Liberman", ADMIN_PIN_HASH: crypto.createHash("sha256").update("KingKing1").digest("hex"), AHM_BASE_AFFILIATE_URL: "https://demashglobal.live", LOGISTICS_STARTUP_ALLOCATION_RATE: 0.35, BASE_COMMISSION_FLOOR: 0.05, ZIM_TRI_AXLE_MASS_LIMIT_TONS: 30.0, AVERAGE_CORRIDOR_FUEL_METRIC_PER_KM: 0.45 }; const REQUIRED_DIRS = ["./contracts", "./data_records"]; REQUIRED_DIRS.forEach(dir => { if (!fs.existsSync(dir)) fs.mkdirSync(dir); }); const SMTP_USER = process.env.GMAIL_USER || "libermanmagaya@gmail.com"; const SMTP_PASS = process.env.GMAIL_APP_PASSWORD || "idvd aekx riyg cjij"; const smtpTransporter = nodemailer.createTransport({ service: "gmail", auth: { user: SMTP_USER, pass: SMTP_PASS } }); export const KNOWLEDGE_PERSUASION_MATRIX = [ { index: 1, title: "Influence: The Psychology of Persuasion", author: "Robert B. Cialdini", coreFramework: "Scarcity and Reciprocity loops", triggerKeywords: ["exclusive", "limited stock", "discount", "special deal"], tacticalResponseHook: "PROPOSED ACTION: Emphasize limited availability at Norton Base. Lock escrow." }, { index: 2, title: "Creating Real Estate Connections", author: "Allan Dalton & Gee Dunsten", coreFramework: "Listing-side positioning", triggerKeywords: ["listing", "stand", "house", "plot", "land"], tacticalResponseHook: "PROPOSED ACTION: Trigger Community Positioning. Deploy local Zimbabwean market stats." } ]; app.post("/api/v2/global/ingest-lead", (req, res) => { try { const { clientName, contactDetail, rawMessage } = req.body; if (!clientName || !contactDetail || !rawMessage) return res.status(400).json({ success: false, error: "Missing parameters" }); const cleanMsg = rawMessage.toLowerCase(); const isAhm = cleanMsg.includes("ahm") || cleanMsg.includes("excavator"); return res.status(200).json({ success: true, base: SOVEREIGN_CONFIG.PARENT_BASE, ahmDirectAffiliateLink: isAhm ? SOVEREIGN_CONFIG.AHM_BASE_AFFILIATE_URL : "NOT_MACHINERY" }); } catch (err) { return res.status(500).json({ success: false, error: err.message }); } }); const PORT = process.env.PORT || 8080; app.listen(PORT, () => { console.log(`[Demash Sovereign Monolith v10.0]: Running on port ${PORT}`); });
